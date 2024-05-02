@@ -4,6 +4,14 @@ import "./TravelList.css"
 
 function TravelList() {
   const [travelPlans, setTravelPlans] = useState(travelPlansData);
+
+  function deleteCard(id){
+    let filterTravels = travelPlans.filter((el) => {
+      return el.id !== id
+    })
+    setTravelPlans(filterTravels)
+  }
+
   return(
     <div className="TravelList">
       {travelPlans.map((el) => {
@@ -27,6 +35,7 @@ function TravelList() {
                   {el.parts[0].name === "All-Inclusive Package" ? "All-inclusive" : null}
                 </p>
               </div>
+              <button onClick={() => deleteCard(el.id)}>Delete</button>
             </section>
           </div>
         )
