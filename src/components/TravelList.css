@@ -30,3 +30,33 @@
 #cardSection > p{
   margin: 10px 0px;
 }
+#price{
+  display: flex;
+  align-items: center;
+}
+#price > h4,p{
+  margin: 0 5px 0 0
+}
+#labels{
+  margin-top: 10px;
+  display: flex;
+  justify-content: flex-start;
+}
+.premium{
+  background-color: rgb(66, 66, 255);
+  color: white;
+  padding: 0 7px;
+  border-radius: 6px;
+}
+.all-inclusive{
+  background-color: rgb(66, 66, 255);
+  color: white;
+  padding: 0 7px;
+  border-radius: 6px;
+}
+.deal{
+  background-color: rgb(15, 179, 42);
+  color: white;
+  padding: 0 7px;
+  border-radius: 6px;
+}
