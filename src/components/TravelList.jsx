@@ -35,7 +35,7 @@ function TravelList() {
                   {el.parts[0].name === "All-Inclusive Package" ? "All-inclusive" : null}
                 </p>
               </div>
-              <button onClick={() => deleteCard(el.id)}>Delete</button>
+              <button id="delete-btn" onClick={() => deleteCard(el.id)}>Delete</button>
             </section>
           </div>
         )
